@@ -5,7 +5,10 @@ const drawerWidth = 240;
 export const useStyles = makeStyles((theme) =>
     createStyles({
         mainContainer:{
-            backgroundColor: theme.palette.primary.main,
+            // backgroundColor: theme.palette.primary.main,
+            margin: 'auto',
+            padding: '1rem',
+            // display: 'flex',
         },
         root: {
             flexGrow: 1,
@@ -17,6 +20,12 @@ export const useStyles = makeStyles((theme) =>
             flexGrow: 1,
             fontWeight: "bold"
             // textAlign: "center"
+        },
+        mainAvatar:{
+            height: '10rem',
+            width: '10rem',
+            marginLeft: 'auto',
+            marginRight: 'auto',
         },
 
         // root: {
