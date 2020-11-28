@@ -22,12 +22,22 @@ export const useStyles = makeStyles((theme) =>
             // textAlign: "center"
         },
         mainAvatar:{
-            height: '10rem',
-            width: '10rem',
+            height: '5rem',
+            width: '5rem',
             marginLeft: 'auto',
             marginRight: 'auto',
         },
-
+        card:{
+            backgroundColor: theme.palette.primary.contrast,
+            width: '18rem',
+            color: 'white',
+        },
+        cardImg:{
+            height: '8rem',
+        }, 
+        cardContent:{
+            padding: '1rem',
+        },
         // root: {
         //     display: 'flex',
         // },
@@ -53,7 +63,7 @@ export const useStyles = makeStyles((theme) =>
         toolbar: theme.mixins.toolbar,
         drawerPaper: {
             width: drawerWidth,
-            backgroundColor: '#425167',
+            backgroundColor: theme.palette.primary.bar,
             color: 'white'
         },
         content: {

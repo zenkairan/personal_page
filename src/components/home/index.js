@@ -1,6 +1,7 @@
-import { Box, Typography, Avatar, Grow } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 import React from 'react'
 import { useStyles } from '../../theme/global_styles';
+import ProfileCard from '../profile_card';
 
 
 
@@ -11,12 +12,9 @@ export default function Home(props){
             <Typography color="textSecondary" align="center">
                 <div>
                     <h1>WOLOLO</h1>
-                    <Grow
-                        in={true}
-                        timeout={1000}
-                    >
-                        <Avatar alt="Klaus Freire" className={classes.mainAvatar} src="/images/mahMans.jpg"/>
-                    </Grow>
+                    {/* grow animation not working with card */}
+                    
+                        <ProfileCard/>
                 </div>
             </Typography>
         </Box>
