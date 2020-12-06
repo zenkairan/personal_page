@@ -1,7 +1,8 @@
-import { Box, Typography } from '@material-ui/core'
+import { Box, Typography, Grid } from '@material-ui/core'
 import React from 'react'
 import { useStyles } from '../../theme/global_styles';
 import ProfileCard from '../profile_card';
+import Skill from '../skill';
 
 
 
@@ -11,10 +12,15 @@ export default function Home(props){
         <Box className={classes.mainContainer}>
             <Typography color="textSecondary" align="center">
                 <div>
-                    <h1>WOLOLO</h1>
-                    {/* grow animation not working with card */}
+                    <Grid container xs="12" md="12" direction="row" alignItems="center" spacing="2">
+                        <Grid item xs="4" md="6" sm="12">
+                            <ProfileCard/>
+                        </Grid>
+                        <Grid item xs="8" md="6" sm="12">
+                            <Skill/>
+                        </Grid>
+                    </Grid>
                     
-                        <ProfileCard/>
                 </div>
             </Typography>
         </Box>

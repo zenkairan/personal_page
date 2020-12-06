@@ -72,6 +72,11 @@ export const useStyles = makeStyles((theme) =>
         },
         icons:{
             color: 'white'
-        }
+        },
+        paper:{
+            width: 'inherit',
+            padding: '0.5rem',
+            backgroundColor: theme.palette.primary.contrast,
+        },
     })
 );
