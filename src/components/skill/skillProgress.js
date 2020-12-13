@@ -22,14 +22,14 @@ export default function SkillProgress(props){
         };
     }, []);
     return (
-        <Grid container xs="12" direction="row" alignItems="center" spacing="2">
-            <Grid item xs="2">
+        <Grid container direction="row" alignItems="center" spacing={2}>
+            <Grid item xs={2}>
                 <Tooltip title={name}>
 
                 <img alt={name} className={classes.mainAvatar} style={{height: '4rem', width: '4rem'}} src={src}/>
                 </Tooltip>
             </Grid>
-            <Grid item xs="10">
+            <Grid item xs={10}>
                 <LinearProgress variant="determinate" value={progress} />
             </Grid>
         </Grid>

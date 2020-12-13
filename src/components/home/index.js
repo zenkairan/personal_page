@@ -10,19 +10,16 @@ export default function Home(props){
     const classes = useStyles();
     return (
         <Box className={classes.mainContainer}>
-            <Typography color="textSecondary" align="center">
-                <div>
-                    <Grid container xs="12" md="12" direction="row" alignItems="center" spacing="2">
-                        <Grid item xs="4" md="6" sm="12">
-                            <ProfileCard/>
-                        </Grid>
-                        <Grid item xs="8" md="6" sm="12">
-                            <Skill/>
-                        </Grid>
+            <div>
+                <Grid container  direction="row" alignItems="center" spacing={2}>
+                    <Grid item xs={4} md={6} sm={12}>
+                        <ProfileCard/>
                     </Grid>
-                    
-                </div>
-            </Typography>
+                    <Grid item xs={8} md={6} sm={12}>
+                        <Skill/>
+                    </Grid>
+                </Grid>
+            </div>
         </Box>
     );
 

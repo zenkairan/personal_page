@@ -50,8 +50,6 @@ export default function ProfileCard(){
                             <a href="https://github.com/zenkairan">github.com/zenkairan</a>
                         </Col>
                     </Container>
-                    <div>
-                    </div>
                 </CardContent>
             </Card>
         </Grow>

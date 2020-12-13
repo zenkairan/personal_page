@@ -6,11 +6,11 @@ import SkillProgress from './skillProgress';
 export default function Skill(){
     const classes = useStyles();
     return (
-        <Grid container xs="12" direction="row" alignItems="center" spacing="2">
+        <Grid container direction="row" alignItems="center" spacing={2}>
             <Paper className={classes.paper}>
 
-                <SkillProgress src="/images/flutterlogo.png" value="75" name="Flutter"/>
-                <SkillProgress src="/images/reactlogo.png" value="65" name="React"/>
+                <SkillProgress src="/images/flutterlogo.png" value={75} name="Flutter"/>
+                <SkillProgress src="/images/reactlogo.png" value={65} name="React"/>
             </Paper>
         </Grid>
     );
