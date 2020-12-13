@@ -22,7 +22,7 @@ export default function SkillProgress(props){
         };
     }, []);
     return (
-        <Grid container direction="row" alignItems="center" spacing={2}>
+        <Grid container direction="row" alignItems="center" spacing={4}>
             <Grid item xs={4} sm={2} md={2} lg={2}>
                 <Tooltip title={name}>
 

@@ -11,6 +11,10 @@ export default function Skill(){
 
                 <SkillProgress src="/images/flutterlogo.png" value={75} name="Flutter"/>
                 <SkillProgress src="/images/reactlogo.png" value={65} name="React"/>
+                <SkillProgress src="/images/javascript.png" value={90} name="Javascript"/>
+                <SkillProgress src="/images/typescript.png" value={85} name="Typescript"/>
+                <SkillProgress src="/images/laravel.png" value={75} name="Laravel"/>
+                <SkillProgress src="/images/php.png" value={70} name="Php"/>
             </Paper>
         </Grid>
     );
