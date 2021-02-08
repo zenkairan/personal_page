@@ -9,6 +9,7 @@ export const useStyles = makeStyles((theme) =>
             margin: 'auto',
             padding: '1rem',
             // display: 'flex',
+            'text-align': '-webkit-center'
         },
         root: {
             flexGrow: 1,
