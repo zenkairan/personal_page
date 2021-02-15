@@ -31,7 +31,7 @@ export default function ProfileCard(){
                         <Col>
                             <FaUser  style={{marginRight: "0.5rem"}}/>
                             About
-                            <p>Desenvolvedor FullStack. Atuante em tecnologias Mobile e Web como Flutter, Node e Php.</p>
+                            <p>Desenvolvedor FullStack. Atuante em tecnologias Mobile e Web como React,Flutter, Node e Php.</p>
                         </Col>
                         <Col>
                             <FaEnvelope style={{marginRight: "0.5rem"}}/>

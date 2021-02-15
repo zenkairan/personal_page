@@ -4,7 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { MdMail, MdInbox } from 'react-icons/md'
+import { MdSubject, MdInbox } from 'react-icons/md'
 import { useStyles } from '../../theme/global_styles';
 
 
@@ -19,12 +19,18 @@ function ResponsiveDrawer(props) {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        {['Main'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <MdInbox className={classes.icons}/> : <MdMail className={classes.icons}/>}</ListItemIcon>
-            <ListItemText primary={text} />
+          <ListItem button onClick={() => window.location.href = '/'}>
+            <ListItemIcon> 
+              <MdInbox className={classes.icons}/>
+            </ListItemIcon>
+            <ListItemText primary="Resumo" />
           </ListItem>
-        ))}
+          <ListItem button onClick={() => window.location.href = '/xp'}>
+            <ListItemIcon> 
+              <MdSubject className={classes.icons}/>
+            </ListItemIcon>
+            <ListItemText primary="Experiência" />
+          </ListItem>
       </List>
     </div>
   );

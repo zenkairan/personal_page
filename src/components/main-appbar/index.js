@@ -4,14 +4,19 @@ import React from 'react';
 import { useStyles } from '../../theme/global_styles';
 import ResponsiveDrawer from '../drawer/responsiveDrawer';
 
-
+const pages = {
+    '': 'Resumo',
+    'xp': 'Experiência'
+}
 
 export default function MainAppBar(props){
-    const { window } = props;
+    // const { window } = props;
     const classes = useStyles();
-    const container = window !== undefined ? () => window().document.body : undefined;
+    const container = undefined;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const theme = useTheme();
+
+    const path = window.location.pathname.substr(1)
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -23,7 +28,7 @@ export default function MainAppBar(props){
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleDrawerToggle}>
                     <MdMenu />
                     </IconButton>
-                    <p className={classes.title}>Main</p>
+                    <p className={classes.title}>{pages[path]}</p>
                 </Toolbar>
             </AppBar>
             <SwipeableDrawer
