@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/home';
 import Xp from './components/experience';
+import About from './components/about';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/xp" component={Xp} />
+        <Route exact path="/about" component={About} />
       </Switch>
     </Router>
   );

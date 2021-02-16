@@ -4,7 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { MdSubject, MdInbox } from 'react-icons/md'
+import { MdSubject, MdInbox, MdPerson } from 'react-icons/md'
 import { useStyles } from '../../theme/global_styles';
 
 
@@ -30,6 +30,12 @@ function ResponsiveDrawer(props) {
               <MdSubject className={classes.icons}/>
             </ListItemIcon>
             <ListItemText primary="Experiência" />
+          </ListItem>
+          <ListItem button onClick={() => window.location.href = '/about'}>
+            <ListItemIcon> 
+              <MdPerson className={classes.icons}/>
+            </ListItemIcon>
+            <ListItemText primary="Sobre" />
           </ListItem>
       </List>
     </div>

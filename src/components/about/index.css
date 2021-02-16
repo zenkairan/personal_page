@@ -1,0 +1,12 @@
+.about-box{
+    /* text-align: justify; */
+    color: white !important;
+    padding-right: 1.5rem !important;
+    margin-top: 2rem;
+}
+.about-avatar{
+    height: 10rem !important;
+    width: 10rem !important;
+    /* marginLeft: 'auto';
+    marginRight: 'auto'; */
+}

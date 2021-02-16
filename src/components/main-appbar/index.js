@@ -6,7 +6,8 @@ import ResponsiveDrawer from '../drawer/responsiveDrawer';
 
 const pages = {
     '': 'Resumo',
-    'xp': 'Experiência'
+    'xp': 'Experiência',
+    'about': 'Sobre'
 }
 
 export default function MainAppBar(props){

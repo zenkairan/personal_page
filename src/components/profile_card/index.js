@@ -1,8 +1,10 @@
 import { Card , Avatar, CardHeader, CardContent, CardMedia, Grow} from '@material-ui/core';
 import React from 'react'
-import { Col, Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { FaUser, FaEnvelope, FaPhone, FaLinkedin , FaGithub} from 'react-icons/fa';
 import { useStyles } from '../../theme/global_styles';
+
+import "./index.css"
 
 export default function ProfileCard(){
     const classes = useStyles();
@@ -21,7 +23,7 @@ export default function ProfileCard(){
                         title={
                             <div>
                                 <h4>Klaus Freire</h4>
-                                <h5>FullStack Developer</h5>
+                                <h5>Full Stack Developer</h5>
                             </div>
                         }
                     />
@@ -31,7 +33,7 @@ export default function ProfileCard(){
                         <Col>
                             <FaUser  style={{marginRight: "0.5rem"}}/>
                             About
-                            <p>Desenvolvedor FullStack. Atuante em tecnologias Mobile e Web como React,Flutter, Node e Php.</p>
+                            <p>Desenvolvedor Full Stack. Atuante em tecnologias Mobile e Web como React,Flutter, Node e Php.</p>
                         </Col>
                         <Col>
                             <FaEnvelope style={{marginRight: "0.5rem"}}/>
@@ -41,14 +43,12 @@ export default function ProfileCard(){
                             <FaPhone style={{marginRight: "0.5rem"}}/>
                             (61) 98271-5186
                         </Col>
-                        <Col>
-                            <FaLinkedin style={{marginRight: "0.5rem"}}/>
-                            <a href="https://www.linkedin.com/in/klausfreire/">linkedin.com/klausfreire</a>
-                        </Col>
-                        <Col>
-                            <FaGithub style={{marginRight: "0.5rem"}}/>
-                            <a href="https://github.com/zenkairan">github.com/zenkairan</a>
-                        </Col>
+                        <Row style={{textAlign: 'center'}}>
+                        
+                            <a href="https://www.linkedin.com/in/klausfreire/" target="_blanc"><FaLinkedin className="link-button"/></a>
+                            <a href="https://github.com/zenkairan" target="_blank" ><FaGithub className="link-button"/></a>
+                                
+                        </Row>
                     </Container>
                 </CardContent>
             </Card>

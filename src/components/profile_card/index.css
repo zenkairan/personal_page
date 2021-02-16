@@ -1,0 +1,13 @@
+.link-button{
+    color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    border-color: white;
+    background-color: #556cd6;
+    padding: 0.2rem;
+    border-style: ridge;
+    margin-top: 1.5rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
