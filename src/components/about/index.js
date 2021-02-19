@@ -21,17 +21,14 @@ export default function About(props){
                 <Paper className={`${classes.paper} about-box`}>
                     <p>Sou um desenvolvedor Full Stack situado em Brasília, atualmente me especializando em Front End. Formado em 
                         Ciência da Computação pela Universidade Católica de Brasília, tenho por volta de 9 anos de experiência.
-                        
+                        Utilizo tecnologias bastante difundidas no mercado, porém gosto de aprender e estou sempre procurando novos
+                        conceitos e ferramentas, e abraço oportunidades de experimentar tecnologias emergentes.
                     </p>
+                    {/* <p>
+                        Gosto de compartilhar meu conhecimento
+                    </p> */}
+
                 </Paper>
-                {/* <Grid container  direction="row" alignItems="center" spacing={2}>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <ProfileCard/>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={8}>
-                        <Skill/>
-                    </Grid>
-                </Grid> */}
             </div>
         </Box>
     );

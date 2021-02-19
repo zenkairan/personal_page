@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) =>
         mainContainer:{
             // backgroundColor: theme.palette.primary.main,
             margin: 'auto',
-            padding: '1rem',
+            padding: '1.5rem',
             // display: 'flex',
             'text-align': '-webkit-center'
         },

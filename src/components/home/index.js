@@ -11,11 +11,11 @@ export default function Home(props){
     return (
         <Box className={classes.mainContainer}>
             <div>
-                <Grid container  direction="row" alignItems="center" spacing={2}>
-                    <Grid item xs={12} sm={6} md={4}>
+                <Grid container  direction="row" alignItems="space-around" spacing={2}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <ProfileCard/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={8}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Skill/>
                     </Grid>
                 </Grid>

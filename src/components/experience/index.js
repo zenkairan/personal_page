@@ -32,14 +32,6 @@ export default function Xp(props){
                             </p>
                         </li>
                         <li>
-                            <h4><b>Desenvolvedor Front End na G44</b></h4>
-                            <p>Desenvolvimento web com o framework React. Projeto com duas equipes (front end e back end). Desenvolvimento
-                                Front End focado na experiência do usuário, com elementos análogos a e-commerce, onde havia um módulo de venda dos
-                                produtos, junto a um módulo administrativo para os sócios. Equipe auto-gerenciável, empregando a metodologia Scrum,
-                                com rotação de ScrumMaster para o melhor aproveitamento e crescimento de todos os membros da equipe.
-                            </p>
-                        </li>
-                        <li>
                             <h4><b>Desenvolvedor Full Stack na Coopersystem</b></h4>
                             <p>Desenvolvimento Full Stack com PHP, utilizando o framewrok Laravel e banco de dados Postgres. Um projeto de 
                                 grande porte, tendo mais de 200 módulos individuais. O processo de desenvolvimento seguia a metodologia ágil

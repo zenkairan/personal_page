@@ -26,10 +26,10 @@ export default function SkillProgress(props){
             <Grid item xs={4} sm={2} md={2} lg={2}>
                 <Tooltip title={name}>
 
-                <img alt={name} className={classes.mainAvatar} style={{height: '4rem', width: '4rem'}} src={src}/>
+                <img alt={name} className={classes.mainAvatar} style={{height: '3rem', width: '3rem'}} src={src}/>
                 </Tooltip>
             </Grid>
-            <Grid item xs={8} sm={10} md={10} lg={10}>
+            <Grid item xs={8} sm={10} md={10} lg={10} style={{paddingRight: '3rem'}}> 
                 <LinearProgress variant="determinate" value={progress} />
             </Grid>
         </Grid>

@@ -14,7 +14,7 @@ export default function ProfileCard(){
             timeout={1000}
         >
 
-            <Card variant="elevation" className={classes.card} raised={true}>
+            <Card variant="elevation" className={classes.card} raised={true} style={{marginTop: '-0.45rem'}}>
                 <CardMedia className={classes.cardImg} image="/images/neutral_background_2.jpg" title="wololo" >
                     <CardHeader
                         avatar={
